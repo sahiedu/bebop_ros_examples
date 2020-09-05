@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<!-- Run bebop odometry node -->
+    <node pkg="bebop_takeoff_land" 
+					type="bebop_takeoff_land" 
+					name="bebop_takeoff_land_node" 
+					output="screen"/>
+
+</launch>
