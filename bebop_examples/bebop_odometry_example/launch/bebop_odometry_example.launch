@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<!-- Run bebop odometry node -->
+    <node pkg="bebop_odometry_example" 
+					type="bebop_odometry_example" 
+					name="bebop_odometry_example_node" 
+					output="screen"/>
+
+	<!-- Open an Rviz window -->
+	<node pkg="rviz"
+				type="rviz"
+				name="rviz" 
+				args="-d $(find bebop_odometry_example)/rviz/config.rviz"/>
+
+</launch>
