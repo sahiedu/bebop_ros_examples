@@ -33,15 +33,10 @@ int main(int argc, char **argv){
     ros::NodeHandle nh;
 
     // publishers
-    /*
     ros::Publisher takeoff_pub = nh.advertise<std_msgs::Empty>("/bebop/takeoff", 1000);
     ros::Publisher land_pub = nh.advertise<std_msgs::Empty>("/bebop/land", 1000);
     ros::Publisher twist_pub = nh.advertise<geometry_msgs::Twist>("/bebop/cmd_vel", 1000);
-    */
 
-    ros::Publisher takeoff_pub = nh.advertise<std_msgs::Empty>("/ardrone/takeoff", 1000);
-    ros::Publisher land_pub = nh.advertise<std_msgs::Empty>("/ardrone/land", 1000);
-    ros::Publisher twist_pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 1000);
 
     // define message objects
     std_msgs::Empty takeoff_msg;
