@@ -1,10 +1,5 @@
-<h1>ROS AR.Drone Examples</h1>
-<p>ARLab @ University of Utah</p>
-<p>http://arl.cs.utah.edu</p>
-<p>http://www.cs.utah.edu/~parcon/</p>
-<p>Parker Conroy</p>
+#bebop_examples
 
--------------------------
 The ardrone examples package features a variety of nodes to help users get the AR.Drone quadrotor robot flying quickly. This code has been tested on the the AR.Drone 1 and 2. Example code is provided for: taking off, landing, resetting, flying for joystick, and open loop flying.
 
 These nodes rely on the AR.Drone Autonomy package (https://github.com/AutonomyLab/ardrone_autonomy) which act as the drivers for the robot. The drivers accept two types of commands, velocity inputs via twist messages (http://www.ros.org/doc/api/geometry_msgs/html/msg/Twist.html), and mode changes via empty type messages (http://ros.org/wiki/std_msgs). These commands can be given from either the command line (rostopic echo) or through a compiled node.
