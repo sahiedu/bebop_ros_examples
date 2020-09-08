@@ -1,11 +1,11 @@
 # bebop_examples
 
-The ardrone examples package features a variety of nodes to help users get the AR.Drone quadrotor robot flying quickly. This code has been tested on the the AR.Drone 1 and 2. Example code is provided for: taking off, landing, resetting, flying for joystick, and open loop flying.
+The bebop_examples collection features a variety of packages to help users get the Parrot Bebop quadrotor robot flying quickly. This code has been tested on the the Bebop 2. Example code is provided for: taking off, landing, resetting, flying for joystick, and open loop flying.
 
-These nodes rely on the AR.Drone Autonomy package (https://github.com/AutonomyLab/ardrone_autonomy) which act as the drivers for the robot. The drivers accept two types of commands, velocity inputs via twist messages (http://www.ros.org/doc/api/geometry_msgs/html/msg/Twist.html), and mode changes via empty type messages (http://ros.org/wiki/std_msgs). These commands can be given from either the command line (rostopic echo) or through a compiled node.
+These nodes rely on the bebop_autonomy package (https://bebop-autonomy.readthedocs.io/en/latest/) which act as the drivers for the robot. The drivers accept two types of commands, velocity inputs via twist messages (http://www.ros.org/doc/api/geometry_msgs/html/msg/Twist.html), and mode changes via empty type messages (http://ros.org/wiki/std_msgs). These commands can be given from either the command line (rostopic echo) or through a compiled node.
 
-Setup:
-git the AR.Drone autonomy package and put it in your ROS workspace. Because of the video codecs, it needs to be installed as shown in the readme (https://github.com/AutonomyLab/ardrone_autonomy).
+## Setup
+git the bebop_autonomy package and put it in your ROS workspace. Because of the video codecs, it needs to be installed as shown in the readme (https://github.com/AutonomyLab/ardrone_autonomy).
 git this package and put it in your ROS workspace, no install needed.
 Launch the drivers and battery monitor using the launch file:
 roslaunch enviroment.launch
