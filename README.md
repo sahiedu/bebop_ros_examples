@@ -37,6 +37,11 @@ Then execute the takeoff and land program:
 roslaunch bebop_takeoff_land bebop_takeoff_land.launch
 ```
 
+### bebop_teleop_joy
+This package allows us to control the Bebop drone with the ```Logitech F710``` gamepad. This program depends on the [joy](https://wiki.ros.org/joy) which enables the use of the gamepad with ROS.
+
+
+
 ### bebop_odometry_example
 This program subscribes to the ```/bebop/odom``` topic data published by the Bebop and populate a ```nav_msgs/Path``` message for further visualization in Rviz.
 
