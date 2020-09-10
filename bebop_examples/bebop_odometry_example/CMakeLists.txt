@@ -6,9 +6,9 @@ project(bebop_odometry_example)
 
 ## Find catkin macros and libraries
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msgs
-  nav_msgs
-  roscpp
+    geometry_msgs
+    nav_msgs
+    roscpp
 )
 
 
@@ -17,8 +17,8 @@ catkin_package()
 
 ## Specify additional locations of header files
 include_directories(include
-	include/bebop_odometry_example
-  ${catkin_INCLUDE_DIRS}
+    include/bebop_odometry_example
+    ${catkin_INCLUDE_DIRS}
 )
 
 
