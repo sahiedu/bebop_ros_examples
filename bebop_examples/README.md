@@ -20,5 +20,5 @@ Next, the entire repository should be cloned to: ```~/catkin_ws/src``` by enteri
 
 ## Examples
 
-### 1.- bebop_takeoff_land
+### bebop_takeoff_land
 This program performs a simple takeoff, keeps the drone in hover mode 1 meter above the takeoff point for about 5 seconds, and then lands.
