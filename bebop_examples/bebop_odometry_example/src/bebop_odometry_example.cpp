@@ -19,7 +19,7 @@ BebopOdometry::~BebopOdometry(){
 }
 
 
-// odometry callback function
+// odometry callback function --------------------------------------------------
 void BebopOdometry::odometryCallback(const nav_msgs::Odometry &odom_msg){
     // data of Bebop's positon will be available after take off
 
