@@ -1,11 +1,6 @@
 <?xml version="1.0" ?>
 
 <launch>
-
 	<!-- Run the node -->
-    <node pkg="bebop_takeoff_land"
-					type="bebop_takeoff_land"
-					name="bebop_takeoff_land_node"
-					output="screen"/>
-
+    <node pkg="bebop_takeoff_land" type="bebop_takeoff_land" name="bebop_takeoff_land_node" output="screen"/>
 </launch>
