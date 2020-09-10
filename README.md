@@ -45,6 +45,14 @@ This package allows us to control the Bebop drone with the ```Logitech F710``` g
 
 <p align="center"><img src="https://i.imgur.com/JtsSjeA.png" width="700" /></p>
 
+```
+roslaunch bebop_driver bebop_node.launch
+```
+
+```
+roslaunch bebop_teleop_joy bebop_teleop_joy.launch
+```
+
 
 ### bebop_odometry_example
 This program subscribes to the ```/bebop/odom``` topic data published by the Bebop and populate a ```nav_msgs/Path``` message for further visualization in Rviz.
