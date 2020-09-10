@@ -2,7 +2,7 @@
 
 The **bebop_examples** collection features a variety of packages to help ROS users get the Parrot Bebop drone flying quickly. This code has been tested on the the Bebop 2 drone. These nodes rely on the [bebop_autonomy](https://github.com/AutonomyLab/bebop_autonomy) package which acts as the driver for the robot.
 
-<p align="center"><img src="https://i.imgur.com/yY6nKXf.png" width="500" /></p>
+<p align="center"><img src="https://i.imgur.com/yY6nKXf.png" width="400" /></p>
 
 
 ## Dependencies
@@ -40,4 +40,4 @@ roslaunch bebop_takeoff_land bebop_takeoff_land.launch
 This program subscribes to the ```/bebop/odom``` topic data published by the Bebop and populate a ```nav_msgs/Path``` message for further visualization in Rviz.
 
 
-<p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="800" /></p>
+<p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
