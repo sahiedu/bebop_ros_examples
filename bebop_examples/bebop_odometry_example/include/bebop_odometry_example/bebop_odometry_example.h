@@ -29,20 +29,16 @@ private:
     geometry_msgs::PoseStamped pose_stamped_msg_;
 
 
-
 public:
 
     // constructor/destructor
     BebopOdometry(ros::NodeHandle &nh);
     ~BebopOdometry();
 
-
     // callback function
     void odometryCallback(const nav_msgs::Odometry &odom_msg);
 
 
 };  // end of class definition
-
-
 
 #endif
