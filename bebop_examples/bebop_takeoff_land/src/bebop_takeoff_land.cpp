@@ -58,9 +58,7 @@ int main(int argc, char **argv){
     ROS_INFO("***** L  A  N  D *****");
     land_pub.publish(land_msg);
 
-
     ros::spinOnce();
-
 
     return 0;
 }
