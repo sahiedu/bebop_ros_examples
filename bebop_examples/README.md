@@ -1,6 +1,6 @@
 # bebop_examples
 
-The **bebop_examples** collection features a variety of packages to help ROS users get the Parrot Bebop drone flying quickly. This code has been tested on the the Bebop 2. These nodes rely on the [bebop_autonomy](https://github.com/AutonomyLab/bebop_autonomy) package which acts as the driver for the robot.
+The **bebop_examples** collection features a variety of packages to help ROS users get the Parrot Bebop drone flying quickly. This code has been tested on the the Bebop 2 drone. These nodes rely on the [bebop_autonomy](https://github.com/AutonomyLab/bebop_autonomy) package which acts as the driver for the robot.
 
 ## Dependencies
 This examples depends on the following external packages:
@@ -21,4 +21,8 @@ Next, the entire repository should be cloned to: ```~/catkin_ws/src``` by enteri
 ## Examples
 
 ### bebop_takeoff_land
-This program performs a simple takeoff, keeps the drone in hover mode 1 meter above the takeoff point for a few seconds, and then lands.
+This program performs a simple takeoff, keeps the drone in hover mode 1 meter above the takeoff point for a few seconds, and then lands. First, run the driver:
+
+'''
+roslaunch bebop_driver bebop_node.launch
+'''
