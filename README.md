@@ -6,12 +6,14 @@ This collection features a variety of packages to help ROS users get the Parrot 
 <p align="center"><img src="https://i.imgur.com/yY6nKXf.png" width="400" /></p>
 
 
+
 ## Dependencies
 The listed examples depends on the following external packages:
 
 - [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#)
 - [joy](https://wiki.ros.org/joy)
 - [mav_msgs](https://wiki.ros.org/mav_msgs)
+
 
 ## Setup
 
@@ -22,23 +24,24 @@ A detailed description for the correct installation of the Bebop driver can be f
 Next, the entire repository should be cloned to: ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/ROS.git``` and compile the code with ```catkin_make```.
 
 
+
 ## Examples
 
 ### bebop_takeoff_land
-This program performs a simple takeoff, keeps the drone in hover mode 1 meter above the takeoff point for a few seconds, and then lands. First, run the driver:
+This program performs a simple takeoff, keeps the drone in hover mode 1 meter above the takeoff point for a few seconds, and then lands. For that, in a terminal run the driver:
 
 ```
 roslaunch bebop_driver bebop_node.launch
 ```
 
-Then execute the takeoff and land program:
+In a new terminal execute the takeoff and land program:
 
 ```
 roslaunch bebop_takeoff_land bebop_takeoff_land.launch
 ```
 
 ### bebop_teleop_joy
-This package allows us to control the Bebop drone with the ```Logitech F710``` gamepad. This program depends on the [joy](https://wiki.ros.org/joy) which enables the use of the gamepad with ROS.
+This package allows us to control the Bebop drone with the ```Logitech F710``` gamepad. This program depends on the [joy](https://wiki.ros.org/joy) node which enables the use of the gamepad with ROS.
 
 
 
