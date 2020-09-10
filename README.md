@@ -7,7 +7,7 @@ This collection features a variety of packages to help ROS users get the Parrot 
 
 
 ## Dependencies
-This examples depends on the following external packages:
+The listed examples depends on the following external packages:
 
 - [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#)
 - [joy](https://wiki.ros.org/joy)

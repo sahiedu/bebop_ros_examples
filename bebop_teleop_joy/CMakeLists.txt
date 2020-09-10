@@ -6,9 +6,9 @@ project(bebop_teleop_joy)
 
 ## Find catkin macros and libraries
 find_package(catkin REQUIRED COMPONENTS
-	geometry_msgs	
+	geometry_msgs
 	joy
-  roscpp
+  	roscpp
 	sensor_msgs
 	std_msgs
 )
@@ -20,7 +20,7 @@ catkin_package()
 ## Specify additional locations of header files
 include_directories(include
 	include/bebop_teleop_joy
-  ${catkin_INCLUDE_DIRS}
+  	${catkin_INCLUDE_DIRS}
 )
 
 
@@ -33,5 +33,5 @@ add_executable(bebop_teleop_joy
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(bebop_teleop_joy
-	${catkin_LIBRARIES}	
+	${catkin_LIBRARIES}
 )
