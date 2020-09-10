@@ -2,6 +2,9 @@
 
 The **bebop_examples** collection features a variety of packages to help ROS users get the Parrot Bebop drone flying quickly. This code has been tested on the the Bebop 2 drone. These nodes rely on the [bebop_autonomy](https://github.com/AutonomyLab/bebop_autonomy) package which acts as the driver for the robot.
 
+<img src="images/bebopTwist.eps">
+
+
 ## Dependencies
 This examples depends on the following external packages:
 
