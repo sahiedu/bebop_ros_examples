@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<!-- Loading parameters -->
+    <rosparam file="$(find bebop_teleop_joy)/params/logF710.yaml" command="load"/>
+
+	<!-- Run joy node -->
+    <node pkg="joy" type="joy_node" name="joy_node">
+    	<param name="dev" value="/dev/input/js0" />
+      	<param name="deadzone" value="0.2" />
+      	<param name="autorepeat_rate" value="20" />
+    </node>
+
+	<!-- Run joy teleoperation node -->
+    <node pkg="bebop_teleop_joy" type="bebop_teleop_joy" name="bebop_teleop_joy_node" output="screen">
+    </node>
+
+</launch>

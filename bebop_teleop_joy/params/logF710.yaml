@@ -1,0 +1,23 @@
+# Logitech F710 wireless controller
+# Deadman (enable) button: Left Trigger
+# D<>X button (located on the back panel) must be set to D
+
+teleop:
+    deadman_button: 6       # LT
+
+    piloting:
+        forward_backward:
+            axis: 3         # Right thumb stick (forward/backward)
+            scale: 0.5      # 1.0 -> 100%
+        left_right:
+            axis: 2         # Right thumb stick (left/right)
+            scale: 0.5      # 1.0 -> 100%
+        up_down:
+            axis: 1         # Left thumb stick (up/down)
+            scale: 0.5      # 1.0 -> 100%
+        yawleft_yawright:
+            axis: 0         # Left thumb stick (yaw left/ yaw right)
+            scale: 0.5      # 1.0 -> 100%
+
+    takeoff_button: 3       # Y
+    land_button: 1          # A
