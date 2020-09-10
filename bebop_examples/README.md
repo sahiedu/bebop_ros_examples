@@ -26,3 +26,9 @@ This program performs a simple takeoff, keeps the drone in hover mode 1 meter ab
 ```
 roslaunch bebop_driver bebop_node.launch
 ```
+
+Then execute the takeoff and land program:
+
+```
+roslaunch bebop_takeoff_land bebop_takeoff_land.launch
+```
