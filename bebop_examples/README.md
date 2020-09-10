@@ -32,3 +32,6 @@ Then execute the takeoff and land program:
 ```
 roslaunch bebop_takeoff_land bebop_takeoff_land.launch
 ```
+
+### bebop_odometry_example
+This program subscribes to the ```/bebop/odom``` topic data published by the Bebop and populate a ```nav_msgs/Path``` message for further visualization in Rviz.
