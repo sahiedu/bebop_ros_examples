@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<!-- Run teleoperation node -->
+    <node pkg="bebop_gps_example" type="bebop_gps_example" name="bebop_gps_example_node" output="screen"/>
+
+</launch>
