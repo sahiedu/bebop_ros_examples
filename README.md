@@ -72,3 +72,15 @@ roslaunch bebop_odometry_example bebop_odometry_example.launch
 <p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
 
 ### bebop_gps_example
+
+```
+roslaunch bebop_driver bebop_node.launch
+```
+
+```
+roslaunch bebop_teleop_joy bebop_teleop_joy.launch
+```
+
+```
+roslaunch bebop_gps_example bebop_gps_example.launch
+```
