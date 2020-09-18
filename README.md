@@ -3,10 +3,6 @@
 This collection features a variety of packages to help ROS users get the Parrot Bebop drone flying quickly. These examples rely on the [bebop_autonomy](https://github.com/AutonomyLab/bebop_autonomy) package which acts as the driver for the robot. The entire repository should be cloned to: ```~/catkin_ws/src```. To do so, navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/EDU4RDO-SH/bebop_ros_examples.git```. Then, navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Bebop 2, ROS Kinetic and Ubuntu 16.04.
 
 
-<p align="center"><img src="https://i.imgur.com/yY6nKXf.png" width="400" /></p>
-
-
-
 ## Dependencies
 The listed examples depends on the following external packages:
 
@@ -83,4 +79,20 @@ roslaunch bebop_teleop_joy bebop_teleop_joy.launch
 
 ```
 roslaunch bebop_gps_example bebop_gps_example.launch
+```
+
+### bebop_control_inputs
+
+<p align="center"><img src="https://i.imgur.com/yY6nKXf.png" width="400" /></p>
+
+```
+roslaunch bebop_driver bebop_node.launch
+```
+
+```
+roslaunch bebop_teleop_joy bebop_teleop_joy.launch
+```
+
+```
+roslaunch bebop_control_inputs bebop_control_inputs.launch
 ```
