@@ -75,7 +75,7 @@ Finally, in a third terminal run the ```bebop_odometry_example``` node:
 roslaunch bebop_odometry_example bebop_odometry_example.launch
 ```
 
-As a result an Rviz window will pop up showing the drone's path. Now yow can start moving the drone with  the gamepad and see the path generated.  
+As a result an Rviz window will pop up. Now yow can start moving the drone with the gamepad and see the path generated.  
 
 <p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
 
