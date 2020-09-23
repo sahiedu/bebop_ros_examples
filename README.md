@@ -41,7 +41,7 @@ roslaunch bebop_takeoff_land bebop_takeoff_land.launch
 ```
 
 ### bebop_teleop_joy
-This package allows us to control the Bebop drone with the [Logitech F710](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.html) gamepad. This package depends on the [joy](https://wiki.ros.org/joy) node which enables the use of the gamepad with ROS by reading  the current state of each one of the joystick's buttons and axes through a ```sensor_msgs/Joy``` message. The following figure shows the configuration used.
+This package allows us to control the Bebop drone with the [Logitech F710](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.html) gamepad. This package depends on the [joy](https://wiki.ros.org/joy) node which enables the use of the gamepad with ROS by reading  the current state of each one of the joystick's buttons and axes through a ```sensor_msgs::Joy``` message. The following figure shows the configuration used.
 
 <p align="center"><img src="https://i.imgur.com/JtsSjeA.png" width="700" /></p>
 
@@ -84,6 +84,8 @@ As a result an Rviz window will pop up. Now yow can start moving the drone with 
 <p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
 
 ### bebop_gps_example
+This package gets the GPS data (Latitude Longitude and Altitude) provided by the drone through a ```sensor_msgs::NavSatFix```and display the values on the Bebop's camera image.
+
 
 ```
 roslaunch bebop_driver bebop_node.launch
