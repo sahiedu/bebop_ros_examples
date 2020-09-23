@@ -103,7 +103,7 @@ Finally, execute the ```bebop_gps_example``` node to get the drone's GPS values.
 roslaunch bebop_gps_example bebop_gps_example.launch
 ```
 
-It is important to note that GPS data will be available after drone's take off.
+It is important to note that GPS data will be available after Bebop's take off.
 
 ### bebop_control_inputs
 
