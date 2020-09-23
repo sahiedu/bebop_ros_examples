@@ -91,13 +91,13 @@ This package gets the GPS data: Latitude Longitude and Altitude provided by the 
 roslaunch bebop_driver bebop_node.launch
 ```
 
-Next, run the ```bebop_teleop_joy``` node in a new terminal window to pilot the drone.
+Next, run the ```bebop_teleop_joy``` node in a new terminal window to pilot the drone:
 
 ```
 roslaunch bebop_teleop_joy bebop_teleop_joy.launch
 ```
 
-Finally, execute the ```bebop_gps_example``` node to get the drone's GPS values.
+Finally, in a third terminal window execute the ```bebop_gps_example``` node:
 
 ```
 roslaunch bebop_gps_example bebop_gps_example.launch
