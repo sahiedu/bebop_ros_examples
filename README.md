@@ -41,13 +41,13 @@ This package allows us to control the Bebop drone with the [Logitech F710](https
 
 <p align="center"><img src="https://i.imgur.com/JtsSjeA.png" width="700" /></p>
 
-To run this program first in a terminal, run the driver:
+To run this program first in a terminal, run the Bebop driver:
 
 ```
 roslaunch bebop_driver bebop_node.launch
 ```
 
-In a second terminal the teleoperation node is executed:
+In a second terminal execute the teleoperation node:
 
 ```
 roslaunch bebop_teleop_joy bebop_teleop_joy.launch
