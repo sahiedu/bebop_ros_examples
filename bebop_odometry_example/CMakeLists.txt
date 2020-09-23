@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
 	INCLUDE_DIRS include
-	#  LIBRARIES bebop_takeoff_land
+	#  LIBRARIES bebop_odometry_example
 	CATKIN_DEPENDS geometry_msgs nav_msgs roscpp
 	#  DEPENDS system_lib
 )
