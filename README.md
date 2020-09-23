@@ -52,7 +52,7 @@ In a second terminal execute the teleoperation node:
 ```
 roslaunch bebop_teleop_joy bebop_teleop_joy.launch
 ```
-To perform any action is mandatory always keep the deadman button pressed. The first step is to send a takeoff command, and once in the air the drone will be ready to receive piloting commands.
+To perform any action always keep the deadman button pressed. The first step is to send a takeoff command, and once in the air the drone will be ready to receive piloting commands.
 
 
 
