@@ -31,7 +31,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: Image
+    SyncSource: ""
 Toolbars:
   toolButtonStyle: 2
 Visualization Manager:
@@ -129,31 +129,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        base_link:
-          Value: true
-        camera_base_link:
-          Value: false
-        camera_optical:
-          Value: false
-        camera_pan_link:
-          Value: false
-        camera_tilt_link:
-          Value: false
-        odom:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        odom:
-          base_link:
-            camera_base_link:
-              camera_pan_link:
-                camera_tilt_link:
-                  camera_optical:
-                    {}
+        {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -181,7 +163,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 1.47823429
+      Distance: 5.75916576
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -196,10 +178,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.864797771
+      Pitch: 0.40479821
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.48353291
+      Yaw: 2.62853479
     Saved: ~
 Window Geometry:
   Displays:

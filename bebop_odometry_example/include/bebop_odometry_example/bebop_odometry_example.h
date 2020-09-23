@@ -10,13 +10,13 @@
 #include <string>
 #include <vector>
 
-
 // ROS messages
 #include <nav_msgs/Odometry.h>
 #include <nav_msgs/Path.h>
 #include <geometry_msgs/PoseStamped.h>
 
 
+// class definition
 class BebopOdometry{
 
 private:
@@ -35,10 +35,12 @@ public:
     BebopOdometry(ros::NodeHandle &nh);
     ~BebopOdometry();
 
+
     // callback function
     void odometryCallback(const nav_msgs::Odometry &odom_msg);
 
 
 };  // end of class definition
+
 
 #endif
