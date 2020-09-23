@@ -16,7 +16,11 @@ The listed examples depend on the following external packages:
 ### 1. Driver installation
 A detailed description of the correct installation of the Bebop driver can be found [here](https://bebop-autonomy.readthedocs.io/en/latest/installation.html).
 
-### 2. Clone the repository
+
+### 2. Install dependencies
+Navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/ethz-asl/mav_comm.git```, then navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. Te previous steps will install the ```mav_comm``` package which includes the ```mav_msgs``` set of messages.
+
+### 3. Clone the repository
 Next, the entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/ROS.git``` and compile the code with ```catkin_make```.
 
 
