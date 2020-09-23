@@ -57,21 +57,25 @@ To perform any action always keep the deadman button pressed. The first step is 
 
 
 ### bebop_odometry_example
-This program subscribes to the ```/bebop/odom``` topic data published by the Bebop driver and populates a ```nav_msgs/Path``` message. The path generated is visualized in Rviz. To do so, first run the Bebop driver in a terminal.
+This program subscribes to the ```/bebop/odom``` topic data published by the Bebop driver and populates a ```nav_msgs/Path``` message. The path generated is visualized in Rviz. To run the program, first execute the Bebop driver in a terminal:
 
 ```
 roslaunch bebop_driver bebop_node.launch
 ```
 
-We also make use of the ```bebop_teleop_joy``` node to move the drone around.
+We also make use of the ```bebop_teleop_joy``` node to move the drone around. For that, in a second terminal run:
 
 ```
 roslaunch bebop_teleop_joy bebop_teleop_joy.launch
 ```
 
+Finally, in a third terminal run the ```bebop_odometry_example``` node:
+
 ```
 roslaunch bebop_odometry_example bebop_odometry_example.launch
 ```
+
+As a result an Rviz window will pop up showing the drone's path. Now yow can start moving the drone with  the gamepad and see the path generated.  
 
 <p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
 
