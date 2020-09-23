@@ -21,13 +21,17 @@ class BebopJoy{
 private:
     ros::NodeHandle nh_;
 
+    // subscriber
     ros::Subscriber joy_sub_;
+
+    // publishers
     ros::Publisher takeoff_pub_;
     ros::Publisher land_pub_;
     ros::Publisher vel_pub_;
 
     geometry_msgs::Twist twist_;
 
+    // flags
     bool got_first_joy_msg_;
     bool is_flying_;
 
@@ -47,9 +51,9 @@ private:
     int land_button_;
 
 public:
-    // constructor/destructor
-    BebopJoy(ros::NodeHandle &nh);
-    ~BebopJoy();
+
+    BebopJoy(ros::NodeHandle &nh);      // constructor
+    ~BebopJoy();                        // destructor
 
     // command publisher
     void publish_cmd();

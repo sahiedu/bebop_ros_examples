@@ -9,6 +9,7 @@ BebopJoy::BebopJoy(ros::NodeHandle &nh): nh_(nh) {
     initPublishers();       // initialize publishers
     loadParameters();       // load parameters from parameter server
 
+    // flags initial state
     is_flying_ = false;
     got_first_joy_msg_ = false;
 
@@ -106,35 +107,43 @@ void BebopJoy::joyCallback(const sensor_msgs::Joy &joy_msg){
 
     if(deadman_button_pressed){
 
-        // PILOTING
-        twist_.linear.x = scale_fb_ * joy_msg.axes[axis_fb_];       // Right thumb stick (up/down) -> forward / backward
-        twist_.linear.y = scale_lr_ * joy_msg.axes[axis_lr_];       // Right thumb stick (left/right) -> left / right
-        twist_.linear.z = scale_ud_ * joy_msg.axes[axis_ud_];       // Left thumb stick (up/down) -> up / down
-        twist_.angular.z = scale_ylyr_ * joy_msg.axes[axis_ylyr_];  // Left thumb stick (left/right) -> yaw left / yaw right
-
-
         // TAKEOFF
         if(!is_flying_ && takeoff_button_pressed){
-            //ROS_INFO("Taking off!");
+            ROS_INFO("= = = = = Taking off! = = = = =");
             takeoff_pub_.publish(std_msgs::Empty());
             is_flying_ = true;
         }
 
         // LAND
         if(is_flying_ && land_button_pressed){
-            //ROS_INFO("Landing");
+            ROS_INFO("= = = = = Landing ... = = = = =");
             land_pub_.publish(std_msgs::Empty());
             is_flying_ = false;
         }
 
-    }
+        // PILOTING
+        if(is_flying_){
+            twist_.linear.x = scale_fb_ * joy_msg.axes[axis_fb_];       // Right thumb stick (up/down) -> forward / backward
+            twist_.linear.y = scale_lr_ * joy_msg.axes[axis_lr_];       // Right thumb stick (left/right) -> left / right
+            twist_.linear.z = scale_ud_ * joy_msg.axes[axis_ud_];       // Left thumb stick (up/down) -> up / down
+            twist_.angular.z = scale_ylyr_ * joy_msg.axes[axis_ylyr_];  // Left thumb stick (left/right) -> yaw left / yaw right
+        }
 
-    publish_cmd();
+    }
+    else{
+        // hover mode
+        twist_.linear.x = 0.0;
+        twist_.linear.y = 0.0;
+        twist_.linear.z = 0.0;
+        twist_.angular.x = 0.0;
+        twist_.angular.y = 0.0;
+        twist_.angular.z = 0.0;
+    }
 
 }
 
 
-// functions that publish twist commands ---------------------------------------
+// publish twist commands ------------------------------------------------------
 void BebopJoy::publish_cmd(){
     vel_pub_.publish(twist_);
 }

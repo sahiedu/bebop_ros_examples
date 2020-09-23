@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 
 <launch>
+
 	<!-- Loading parameters -->
     <rosparam file="$(find bebop_teleop_joy)/params/logF710.yaml" command="load"/>
 
