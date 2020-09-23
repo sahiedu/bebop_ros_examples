@@ -24,7 +24,7 @@ Next, the entire repository should be cloned to ```~/catkin_ws/src``` by enterin
 ## Examples
 
 ### bebop_takeoff_land
-This program performs a simple takeoff, keeps the drone in hover mode 1 meter above the takeoff point for a few seconds, and then lands. For that, in a terminal run the driver:
+This program performs a simple takeoff, keeps the drone in hover mode 1 meter above the takeoff point for a few seconds, and then lands. For that, in a terminal run the Bebop driver:
 
 ```
 roslaunch bebop_driver bebop_node.launch
@@ -57,11 +57,13 @@ To perform any action always keep the deadman button pressed. The first step is 
 
 
 ### bebop_odometry_example
-This program subscribes to the ```/bebop/odom``` topic data published by the Bebop and populate a ```nav_msgs/Path``` message for further visualization in Rviz.
+This program subscribes to the ```/bebop/odom``` topic data published by the Bebop driver and populates a ```nav_msgs/Path``` message. The path generated is visualized in Rviz. To do so, first run the Bebop driver in a terminal.
 
 ```
 roslaunch bebop_driver bebop_node.launch
 ```
+
+We also make use of the ```bebop_teleop_joy``` node to move the drone around.
 
 ```
 roslaunch bebop_teleop_joy bebop_teleop_joy.launch
