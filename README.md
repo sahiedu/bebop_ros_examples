@@ -84,7 +84,7 @@ As a result an Rviz window will pop up. Now yow can start moving the drone with 
 <p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
 
 ### bebop_gps_example
-This package gets the GPS data (Latitude Longitude and Altitude) provided by the drone through a ```sensor_msgs::NavSatFix```and display the values on the Bebop's camera image.
+This package gets the GPS data (Latitude Longitude and Altitude) provided by the drone through a ```sensor_msgs::NavSatFix```and display the values on the Bebop's camera image. Additionally, the program displays the information of the percentage of charge of the battery. This allows us to know when it is necessary to recharge it.
 
 
 ```
