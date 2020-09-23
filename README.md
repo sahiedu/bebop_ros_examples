@@ -84,20 +84,26 @@ As a result an Rviz window will pop up. Now yow can start moving the drone with 
 <p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
 
 ### bebop_gps_example
-This package gets the GPS data: Latitude Longitude and Altitude provided by the drone through a ```sensor_msgs::NavSatFix```. The values are displayed on the Bebop's camera image. Additionally, the program tracks the information of the percentage of charge of the battery. This allows us to know when it is necessary to recharge it.
+This package gets the GPS data: Latitude Longitude and Altitude provided by the drone through a ```sensor_msgs::NavSatFix```. The values are displayed on the Bebop's camera image. Additionally, the program tracks the information of the percentage of charge of the battery, this let us to know when it is necessary to recharge it. To run the program first execute the Bebop driver in a terminal window:
 
 
 ```
 roslaunch bebop_driver bebop_node.launch
 ```
 
+Next, run the ```bebop_teleop_joy``` node in a new terminal window to pilot the drone.
+
 ```
 roslaunch bebop_teleop_joy bebop_teleop_joy.launch
 ```
 
+Finally, execute the ```bebop_gps_example``` node to get the drone's GPS values.
+
 ```
 roslaunch bebop_gps_example bebop_gps_example.launch
 ```
+
+It is important to note that GPS data will be available after drone's take off.
 
 ### bebop_control_inputs
 
