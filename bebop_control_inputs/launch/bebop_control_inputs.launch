@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<!-- Run bebop_control_inputs node -->
+    <node pkg="bebop_control_inputs" type="bebop_control_inputs" name="bebop_control_inputs_node" output="screen"/>
+
+</launch>
