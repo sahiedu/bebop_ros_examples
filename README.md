@@ -84,7 +84,7 @@ As a result an Rviz window will pop up. Now yow can start moving the drone with 
 <p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
 
 ### bebop_gps_example
-This package gets the GPS data: Latitude Longitude and Altitude provided by the drone through a ```sensor_msgs::NavSatFix```. The values are displayed on the Bebop's camera image. Additionally, the program tracks the information of the percentage of charge of the battery, this let us to know when it is necessary to recharge it. To run the program first execute the Bebop driver in a terminal window:
+This package gets the GPS data: Latitude Longitude and Altitude provided by the drone through a ```sensor_msgs::NavSatFix```. The values are displayed on the Bebop's camera image. Additionally, the program monitors the percentage of charge of the battery, this let us to know when it is necessary to recharge it. To run the program first execute the Bebop driver in a terminal window:
 
 
 ```
@@ -106,19 +106,23 @@ roslaunch bebop_gps_example bebop_gps_example.launch
 It is important to note that GPS data will be available after Bebop's take off.
 
 ### bebop_control_inputs
-This package subscribes to the ```/bebop/cmd_vel``` topic and converts the twist data whose range for all fields are ```[-1..1]``` into control variables to populate a ```mav_msgs::RollPitchYawrateThrust``` message. According to the [piloting](https://bebop-autonomy.readthedocs.io/en/latest/piloting.html#piloting) section in the [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#bebop-autonomy-ros-driver-for-parrot-bebop-drone-quadrocopter-1-0-2-0) official site, the *roll* and *pitch* angles depend on the value of ```max_tilt_angle``` parameter, the resultig *yaw rate* depends on the value of ```max_rot_speed``` parameter, and the *vertical speed* depends on the value of ```max_vert_speed``` parameter.
-
+This package subscribes to the ```/bebop/cmd_vel``` topic and converts the twist data whose range for all fields are ```[-1..1]``` into control variables to populate a ```mav_msgs::RollPitchYawrateThrust``` message. According to the [piloting](https://bebop-autonomy.readthedocs.io/en/latest/piloting.html#piloting) section in the [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#bebop-autonomy-ros-driver-for-parrot-bebop-drone-quadrocopter-1-0-2-0) official site, the *roll* and *pitch* angles depend on the value of ```max_tilt_angle``` parameter, the resultig *yaw rate* depends on the value of ```max_rot_speed``` parameter, and the *vertical speed* depends on the value of ```max_vert_speed``` parameter. The resulting data is published in the ```/bebop/cmd_ctrl```.
 
 
 <p align="center"><img src="https://i.imgur.com/yY6nKXf.png" width="400" /></p>
 
+Additionally, the current control inputs applied to the drone are displayed on the camera image. This program also monitors the percentage of charge of the battery. To run the program  first execute the driver in a terminal window:
+
 ```
 roslaunch bebop_driver bebop_node.launch
 ```
+Open a new terminal and run the ```bebop_teleop_joy``` node:
 
 ```
 roslaunch bebop_teleop_joy bebop_teleop_joy.launch
 ```
+
+Finally in a new terminal window run the ```bebop_control_inputs``` node:
 
 ```
 roslaunch bebop_control_inputs bebop_control_inputs.launch
