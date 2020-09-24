@@ -17,7 +17,10 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(OpenCV REQUIRED)
 
 
-catkin_package()
+catkin_package(
+	INCLUDE_DIRS include
+	CATKIN_DEPENDS bebop_msgs cv_bridge image_transport roscpp sensor_msgs
+)
 
 
 ## Specify additional locations of header files

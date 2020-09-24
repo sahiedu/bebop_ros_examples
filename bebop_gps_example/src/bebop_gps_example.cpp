@@ -62,7 +62,6 @@ void BebopGPS::imageCallback(const sensor_msgs::ImageConstPtr &img_msg){
 
     // convert color image to grayscale
     cv::cvtColor(img_color_, img_gray_, CV_BGR2GRAY);
-    // convert grayscale image to RGB gray image
     cv::cvtColor(img_gray_, img_gray_rgb_, CV_GRAY2BGR);
 
 

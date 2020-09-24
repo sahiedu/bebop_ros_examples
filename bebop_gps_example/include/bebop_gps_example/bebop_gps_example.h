@@ -52,9 +52,9 @@ private:
     bool got_first_batt_msg_;
 
 public:
-    // constructor/destructor
-    BebopGPS(ros::NodeHandle &nh);
-    ~BebopGPS();
+
+    BebopGPS(ros::NodeHandle &nh);      // constructor
+    ~BebopGPS();                        // destructor
 
     // utility functions
     std::string num2string(double var);
