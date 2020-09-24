@@ -106,6 +106,7 @@ roslaunch bebop_gps_example bebop_gps_example.launch
 It is important to note that GPS data will be available after Bebop's take off.
 
 ### bebop_control_inputs
+This package subscribes to the ```/bebop/cmd_vel``` topic and converts the twist data whose range for all fields are ```[-1..1]``` into control variables to populate a ```mav_msgs::RollPitchYawrateThrust``` message.  s
 
 [piloting](https://bebop-autonomy.readthedocs.io/en/latest/piloting.html#piloting)
 
