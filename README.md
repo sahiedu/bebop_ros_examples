@@ -1,12 +1,12 @@
 # bebop_ros_examples
 
-This collection features a variety of packages to help ROS users get the Parrot Bebop drone flying quickly. These examples rely on the [bebop_autonomy](https://github.com/AutonomyLab/bebop_autonomy) package which acts as the driver for the robot. The entire repository should be cloned to ```~/catkin_ws/src```. To do so, navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/EDU4RDO-SH/bebop_ros_examples.git```. Then, navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Bebop 2, ROS Kinetic, and Ubuntu 16.04.
+This collection features a variety of packages to help ROS users get the Parrot Bebop drone flying quickly. These examples rely on the [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#bebop-autonomy-ros-driver-for-parrot-bebop-drone-quadrocopter-1-0-2-0) package which acts as the driver for the robot. The entire repository should be cloned to ```~/catkin_ws/src```. To do so, navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/EDU4RDO-SH/bebop_ros_examples.git```. Then, navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. If you are installing ROS for the first time, see the instructions [here](https://wiki.ros.org/kinetic/Installation/Ubuntu). This version has been created using the Bebop 2, ROS Kinetic, and Ubuntu 16.04.
 
 
 ## Dependencies
 The listed examples depend on the following external packages:
 
-- [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#)
+- [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#bebop-autonomy-ros-driver-for-parrot-bebop-drone-quadrocopter-1-0-2-0)
 - [joy](https://wiki.ros.org/joy)
 - [mav_msgs](https://wiki.ros.org/mav_msgs)
 
@@ -14,7 +14,7 @@ The listed examples depend on the following external packages:
 ## Setup
 
 ### 1. Driver installation
-A detailed description of the correct installation of the Bebop driver can be found [here](https://bebop-autonomy.readthedocs.io/en/latest/installation.html).
+A detailed description of the correct installation of the Bebop driver can be found [here](https://bebop-autonomy.readthedocs.io/en/latest/installation.html#installation).
 
 
 ### 2. Install dependencies
