@@ -106,7 +106,7 @@ roslaunch bebop_gps_example bebop_gps_example.launch
 It is important to note that GPS data will be available after Bebop's take off.
 
 ### bebop_control_inputs
-This package subscribes to the ```/bebop/cmd_vel``` topic and converts the twist data whose range for all fields are ```[-1..1]``` into control variables to populate a ```mav_msgs::RollPitchYawrateThrust``` message. According to the [piloting](https://bebop-autonomy.readthedocs.io/en/latest/piloting.html#piloting) section in the [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#bebop-autonomy-ros-driver-for-parrot-bebop-drone-quadrocopter-1-0-2-0) official site, the *roll* and *pitch* angles depend on the ```max_tilt_angle``` parameter, the *yaw rate* depends on the ```max_rot_speed``` parameter, and the *vertical speed* depends on the  ```max_vert_speed``` parameter.
+This package subscribes to the ```/bebop/cmd_vel``` topic and converts the twist data whose range for all fields are ```[-1..1]``` into control variables to populate a ```mav_msgs::RollPitchYawrateThrust``` message. According to the [piloting](https://bebop-autonomy.readthedocs.io/en/latest/piloting.html#piloting) section in the [bebop_autonomy](https://bebop-autonomy.readthedocs.io/en/latest/#bebop-autonomy-ros-driver-for-parrot-bebop-drone-quadrocopter-1-0-2-0) official site, the *roll* and *pitch* angles depend on the value of ```max_tilt_angle``` parameter, the resultig *yaw rate* depends on the value of ```max_rot_speed``` parameter, and the *vertical speed* depends on the value of ```max_vert_speed``` parameter.
 
 
 
