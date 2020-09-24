@@ -107,6 +107,8 @@ It is important to note that GPS data will be available after Bebop's take off.
 
 ### bebop_control_inputs
 
+[piloting](https://bebop-autonomy.readthedocs.io/en/latest/piloting.html#piloting)
+
 <p align="center"><img src="https://i.imgur.com/yY6nKXf.png" width="400" /></p>
 
 ```
