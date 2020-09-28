@@ -50,7 +50,7 @@ add_executable(bebop_control_inputs
 )
 
 
-## Add cmake target dependencies of the executable (for use of messages from external packages)
+## Add cmake target dependencies of the executable (to use messages from external packages)
 add_dependencies(bebop_control_inputs ${catkin_EXPORTED_TARGETS})
 
 
