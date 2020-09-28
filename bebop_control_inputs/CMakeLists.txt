@@ -20,6 +20,14 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(OpenCV REQUIRED)
 
 
+## Generate added messages and services with any dependencies listed here
+generate_messages(DEPENDENCIES
+	std_msgs  # Or other packages containing msgs
+	bebop_msgs
+	mav_msgs
+)
+
+
 ## catkin specific configuration
 catkin_package(
   INCLUDE_DIRS include
@@ -40,6 +48,10 @@ add_executable(bebop_control_inputs
 	src/bebop_control_inputs.cpp
 	src/bebop_control_inputs_main.cpp
 )
+
+
+## Add cmake target dependencies of the executable (for use of messages from external packages)
+add_dependencies(bebop_control_inputs ${catkin_EXPORTED_TARGETS})
 
 
 ## Specify libraries to link a library or executable target against
