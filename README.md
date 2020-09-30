@@ -81,7 +81,7 @@ roslaunch bebop_odometry_example bebop_odometry_example.launch
 
 As a result an Rviz window will pop up. Now yow can start moving the drone with the gamepad and see the path generated.  
 
-<p align="center"><img src="https://i.imgur.com/G9SAn9K.png" width="1000" /></p>
+<p align="center"><img src="https://i.imgur.com/mDa9Rgy.png" width="1000" /></p>
 
 ### bebop_gps_example
 This package gets the GPS data: Latitude Longitude and Altitude provided by the drone through a ```sensor_msgs::NavSatFix```. The values are displayed on the Bebop's camera image. Additionally, the program monitors the percentage of charge of the battery, this let us to know when it is necessary to recharge it. To run the program first execute the Bebop driver in a terminal window:
