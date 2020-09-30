@@ -21,7 +21,7 @@ A detailed description of the correct installation of the Bebop driver can be fo
 Navigate to ```~/catkin_ws/src``` and from a terminal and enter: ```git clone https://github.com/ethz-asl/mav_comm.git```, then navigate to ```~/catkin_ws``` and compile the code with the command: ```catkin_make```. The previous steps will install the ```mav_comm``` package which includes the ```mav_msgs``` set of messages.
 
 ### 3. Clone the repository
-Next, the entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/ROS.git``` and compile the code with ```catkin_make```.
+Next, the entire repository should be cloned to ```~/catkin_ws/src``` by entering the command ```git clone https://github.com/EDU4RDO-SH/bebop_ros_examples.git``` and compile the code with ```catkin_make```.
 
 
 
