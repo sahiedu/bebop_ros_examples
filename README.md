@@ -103,7 +103,7 @@ Finally, in a third terminal window execute the ```bebop_gps_example``` node:
 roslaunch bebop_gps_example bebop_gps_example.launch
 ```
 
-<p align="center"><img src="https://i.imgur.com/6YBFBrh.png" width="1000" /></p>
+<p align="center"><img src="https://i.imgur.com/6YBFBrh.png" width="800" /></p>
 
 It is important to note that GPS data will be available after Bebop's take off.
 
@@ -129,3 +129,5 @@ Finally in a new terminal window run the ```bebop_control_inputs``` node:
 ```
 roslaunch bebop_control_inputs bebop_control_inputs.launch
 ```
+
+<p align="center"><img src="https://i.imgur.com/6YBFBrh.png" width="1000" /></p>
